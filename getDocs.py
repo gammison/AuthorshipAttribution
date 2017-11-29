@@ -4,7 +4,7 @@ files = {'ID_Bergus','ID_Burdett','ID_Rusk','ID_Newsom', 'ID_Sisco'}
 user = open(data/user);
 u = data.readline();
 p = data.readline();
-db= MySQLdb.connect(user = u, passwd= p,'
+db= MySQLdb.connect(user = u, passwd= p,
         host='history-lab.org',db='declassification_frus')
 c = db.cursor()
 #c.execute("""SELECT raw_body FROM docs WHERE id='frus1961-63v12d251';""")
